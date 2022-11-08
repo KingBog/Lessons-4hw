@@ -28,6 +28,7 @@ public class Main {
                     String valName=scn.next();
                     System.out.println("Введите цвет яблока");
                     String valColor= scn.next();
+                //indexOf
                 for (int i = 0; i < apples.size() ; i++) {
                     if (apples.get(i).getName().equals(valName)&&apples.get(i).getColorApple().equals(valColor)){
                         System.out.println(apples.get(i).getPrice()+" грн");
@@ -45,6 +46,7 @@ public class Main {
                 String valName=scn.next();
                 System.out.println("Введите его кислотность");
                 int valSolid= scn.nextInt();
+                //indexOf
                 for (int i = 0; i < lemons.size(); i++) {
                     if (lemons.get(i).getName().equals(valName)&&lemons.get(i).getDegreeSolid()==valSolid){
                         System.out.println(lemons.get(i).getPrice());

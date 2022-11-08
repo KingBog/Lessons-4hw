@@ -3,7 +3,8 @@ package Lessons41;
 public class Gun {
     private String name;
     private int damage;
-
+    //Стараемся соблюдать такой порядок: поля, конструктороы, потом все методы.
+    //Методы надо спустить ниже
     public String getName() {
         return name;
     }
@@ -27,9 +28,9 @@ public class Gun {
     public void setPrise(int prise) {
         this.prise = prise;
     }
-
+    //Поле надо поднять наверх
     private int prise;
-
+    //Конструктор должен быть после полей
     public Gun(String name, int damage, int prise) {
         this.name = name;
         this.damage = damage;
