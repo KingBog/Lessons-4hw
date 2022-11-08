@@ -22,6 +22,7 @@ public class Main {
                     System.out.println(list.get(i));
                 }
             } else if (input == 2) {
+                //Слишком много циклов. Нужно в первом цикле найти индекс, чтобы не запускать второй цикл.
                 int power = 0;
                 for (int i = 0; i < list.size(); i++) {
                     if ( list.get(i).getDamage()>power) {
@@ -37,6 +38,8 @@ public class Main {
             }else if (input==3){
                 System.out.println("Введите название оружия: ");
                 String var= scn.next();
+                
+                //Цикл не нужен, если воспользоваться методом list.indexOf
                 for (int i = 0; i < list.size(); i++) {
                     if (list.get(i).getName().equals(var)){
                         System.out.println("Урон : "+list.get(i).getDamage()+" Цена : "+list.get(i).getPrise());
@@ -47,6 +50,7 @@ public class Main {
             else if (input==4){
                 System.out.println("Введите оружие которое нужно удалить: ");
                 String var=scn.next();
+                //Цикл будет не нужен, если воспользоваться методом list.remove(по значению, а не по индексу)
                 for (int i=0; i<list.size();i++){
                     if (list.get(i).getName().equals(var)){
                         list.remove(i);
