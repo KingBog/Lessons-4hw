@@ -4,6 +4,7 @@ public class Gun {
     private String name;
     private int damage;
 
+    //Все методы пишем после конструкторов (надо опустить вниз)
     public String getName() {
         return name;
     }
@@ -28,8 +29,9 @@ public class Gun {
         this.prise = prise;
     }
 
-    private int prise;
-
+    //Поля стараемся писать в одном месте до конструкторов и методов (надо поднять наверх)
+    private int prise; 
+    //Конструкторы пишем после полей (надо поднять наверх)
     public Gun(String name, int damage, int prise) {
         this.name = name;
         this.damage = damage;
