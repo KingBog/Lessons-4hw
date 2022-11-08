@@ -26,6 +26,7 @@ public class Main {
                 String nameCat=scn.next();
                 System.out.println("Введите цвет кота ");
                 String colorCat=scn.next();
+                //используй indexOf
                 for (int i = 0; i < cats.size(); i++) {
                     if (cats.get(i).getName().equals(nameCat)&&cats.get(i).getColor().equals(colorCat)){
                         System.out.println(cats.get(i));
@@ -36,6 +37,7 @@ public class Main {
                 String nameCat=scn.next();
                 System.out.println("Введитя вес кота");
                 int weightCat=scn.nextInt();
+                //используй remove(по значению)
                 for (int i = 0; i < cats.size(); i++) {
                     if (cats.get(i).getName().equals(nameCat)&&cats.get(i).getWeight()==weightCat){
                         cats.remove(i);
